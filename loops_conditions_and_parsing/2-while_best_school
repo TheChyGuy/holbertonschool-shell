@@ -2,5 +2,4 @@
 # Write a Bash script that displays Best School 10 times, using while loop.
 while [ $count -lt 10 ]; do
 echo "Best School"
-((count++))
 done

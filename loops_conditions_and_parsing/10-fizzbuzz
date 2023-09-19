@@ -1,21 +1,16 @@
 #!/usr/bin/env bash
 #Write a bash script that displays numbers from 1 to 100.
-fizzbuzz_list=()
-
-for x in {1..100}
-do
-	if [ "$((x % 15))" -eq 0 ]; then
-		fizzbuzz_list+=("Fizzbuzz")
-	elif [ "$((x % 3))" -eq 0 ]; then
-		fizzbuzz_list+=("Fizz")
-	elif [ "$((x % 5))" -eq 0 ]; then
-		fizzbuzz_list+=("Buzz")
-	else
-		fizzbuzz_list+=("$x")
+num=1
+num_target=100
+while [ $num -le $num_target ]; do
+	if (( num % 3 == 0 )) && (( num % 5 == 0 )) ; then
+	echo "Fizzbuzz"
+elif (( num % 3 == 0 )) ; then
+	echo "fizz"
+elif (( num % 5 == 0 )) ; then
+	echo "Buzz"
+else
+	echo $num
 	fi
-done
-
-for item in "${fizzbuzz_list[@]}"
-do
-	echo "$item"
+	((num=num+1))
 done

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Write a bash script that displays numbers from 1 to 100.
-fizzbuzz_list-()
+fizzbuzz_list=()
 
 for x in {1..100}
 do

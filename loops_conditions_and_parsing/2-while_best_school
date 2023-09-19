@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays Best School 10 times, using while loop.
 number=1
-while [ $count -lt 10 ];
+while [ $count -le 10 ];
 do 
 	echo "Best School"
 	number=$(( number+1 ))
